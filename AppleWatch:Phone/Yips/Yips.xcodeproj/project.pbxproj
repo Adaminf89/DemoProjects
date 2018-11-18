@@ -1,0 +1,682 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F0495FA8205714F900CC21B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0495FA7205714F900CC21B9 /* AppDelegate.swift */; };
+		F0495FAA205714F900CC21B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0495FA9205714F900CC21B9 /* ViewController.swift */; };
+		F0495FAD205714F900CC21B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0495FAB205714F900CC21B9 /* Main.storyboard */; };
+		F0495FAF205714F900CC21B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0495FAE205714F900CC21B9 /* Assets.xcassets */; };
+		F0495FB2205714F900CC21B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0495FB0205714F900CC21B9 /* LaunchScreen.storyboard */; };
+		F0495FB7205714F900CC21B9 /* Yips WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F0495FB6205714F900CC21B9 /* Yips WatchKit App.app */; };
+		F0495FBD205714F900CC21B9 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0495FBB205714F900CC21B9 /* Interface.storyboard */; };
+		F0495FBF205714F900CC21B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0495FBE205714F900CC21B9 /* Assets.xcassets */; };
+		F0495FC6205714F900CC21B9 /* Yips WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F0495FC5205714F900CC21B9 /* Yips WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F0495FCB205714F900CC21B9 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0495FCA205714F900CC21B9 /* InterfaceController.swift */; };
+		F0495FCD205714F900CC21B9 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0495FCC205714F900CC21B9 /* ExtensionDelegate.swift */; };
+		F0495FCF205714F900CC21B9 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0495FCE205714F900CC21B9 /* NotificationController.swift */; };
+		F0495FD1205714F900CC21B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0495FD0205714F900CC21B9 /* Assets.xcassets */; };
+		F049604D205B4C7900CC21B9 /* UserDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F049604A205B4C7900CC21B9 /* UserDataManager.swift */; };
+		F049604E205B4C7900CC21B9 /* UserDataObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = F049604C205B4C7900CC21B9 /* UserDataObjects.swift */; };
+		F0496050205B576600CC21B9 /* DetailWatchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F049604F205B576600CC21B9 /* DetailWatchController.swift */; };
+		F0496051205B5A5B00CC21B9 /* UserDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F049604A205B4C7900CC21B9 /* UserDataManager.swift */; };
+		F0496052205B5A6000CC21B9 /* UserDataObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = F049604C205B4C7900CC21B9 /* UserDataObjects.swift */; };
+		F049605B205CB66500CC21B9 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F049605A205CB66500CC21B9 /* ImageCell.swift */; };
+		F0E904B02062FB6D001B3E49 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E904AF2062FB6D001B3E49 /* TableViewCell.swift */; };
+		F0E904B52062FECE001B3E49 /* TableViewCon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E904B42062FECE001B3E49 /* TableViewCon.swift */; };
+		F0E904BB20656493001B3E49 /* TrackerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E904BA20656493001B3E49 /* TrackerController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F0495FB8205714F900CC21B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0495F9C205714F900CC21B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0495FB5205714F900CC21B9;
+			remoteInfo = "Yips WatchKit App";
+		};
+		F0495FC7205714F900CC21B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0495F9C205714F900CC21B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0495FC4205714F900CC21B9;
+			remoteInfo = "Yips WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F0495FD9205714F900CC21B9 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F0495FC6205714F900CC21B9 /* Yips WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0495FDD205714F900CC21B9 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				F0495FB7205714F900CC21B9 /* Yips WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F0495FA4205714F900CC21B9 /* Yips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yips.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0495FA7205714F900CC21B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F0495FA9205714F900CC21B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F0495FAC205714F900CC21B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F0495FAE205714F900CC21B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F0495FB1205714F900CC21B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F0495FB3205714F900CC21B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0495FB6205714F900CC21B9 /* Yips WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yips WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0495FBC205714F900CC21B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		F0495FBE205714F900CC21B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F0495FC0205714F900CC21B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0495FC5205714F900CC21B9 /* Yips WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Yips WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0495FCA205714F900CC21B9 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		F0495FCC205714F900CC21B9 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		F0495FCE205714F900CC21B9 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		F0495FD0205714F900CC21B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F0495FD2205714F900CC21B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0495FD3205714F900CC21B9 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		F049604A205B4C7900CC21B9 /* UserDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDataManager.swift; sourceTree = "<group>"; };
+		F049604C205B4C7900CC21B9 /* UserDataObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDataObjects.swift; sourceTree = "<group>"; };
+		F049604F205B576600CC21B9 /* DetailWatchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailWatchController.swift; sourceTree = "<group>"; };
+		F049605A205CB66500CC21B9 /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		F0E904AF2062FB6D001B3E49 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		F0E904B42062FECE001B3E49 /* TableViewCon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCon.swift; sourceTree = "<group>"; };
+		F0E904B62064815C001B3E49 /* Yips WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Yips WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		F0E904B72064816C001B3E49 /* Yips.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Yips.entitlements; sourceTree = "<group>"; };
+		F0E904BA20656493001B3E49 /* TrackerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F0495FA1205714F900CC21B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0495FC2205714F900CC21B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F0495F9B205714F900CC21B9 = {
+			isa = PBXGroup;
+			children = (
+				F0495FA6205714F900CC21B9 /* Yips */,
+				F0495FBA205714F900CC21B9 /* Yips WatchKit App */,
+				F0495FC9205714F900CC21B9 /* Yips WatchKit Extension */,
+				F0495FA5205714F900CC21B9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F0495FA5205714F900CC21B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0495FA4205714F900CC21B9 /* Yips.app */,
+				F0495FB6205714F900CC21B9 /* Yips WatchKit App.app */,
+				F0495FC5205714F900CC21B9 /* Yips WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F0495FA6205714F900CC21B9 /* Yips */ = {
+			isa = PBXGroup;
+			children = (
+				F0E904B72064816C001B3E49 /* Yips.entitlements */,
+				F0495FAB205714F900CC21B9 /* Main.storyboard */,
+				F0495FA7205714F900CC21B9 /* AppDelegate.swift */,
+				F0495FA9205714F900CC21B9 /* ViewController.swift */,
+				F0E904BA20656493001B3E49 /* TrackerController.swift */,
+				F0E904B42062FECE001B3E49 /* TableViewCon.swift */,
+				F0E904AF2062FB6D001B3E49 /* TableViewCell.swift */,
+				F0496049205B4C7900CC21B9 /* Manager */,
+				F0495FAE205714F900CC21B9 /* Assets.xcassets */,
+				F0495FB0205714F900CC21B9 /* LaunchScreen.storyboard */,
+				F0495FB3205714F900CC21B9 /* Info.plist */,
+			);
+			path = Yips;
+			sourceTree = "<group>";
+		};
+		F0495FBA205714F900CC21B9 /* Yips WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				F0495FBB205714F900CC21B9 /* Interface.storyboard */,
+				F0495FBE205714F900CC21B9 /* Assets.xcassets */,
+				F0495FC0205714F900CC21B9 /* Info.plist */,
+			);
+			path = "Yips WatchKit App";
+			sourceTree = "<group>";
+		};
+		F0495FC9205714F900CC21B9 /* Yips WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F0E904B62064815C001B3E49 /* Yips WatchKit Extension.entitlements */,
+				F0495FCC205714F900CC21B9 /* ExtensionDelegate.swift */,
+				F0495FCA205714F900CC21B9 /* InterfaceController.swift */,
+				F049604F205B576600CC21B9 /* DetailWatchController.swift */,
+				F049605A205CB66500CC21B9 /* ImageCell.swift */,
+				F0495FCE205714F900CC21B9 /* NotificationController.swift */,
+				F0495FD0205714F900CC21B9 /* Assets.xcassets */,
+				F0495FD2205714F900CC21B9 /* Info.plist */,
+				F0495FD3205714F900CC21B9 /* PushNotificationPayload.apns */,
+			);
+			path = "Yips WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		F0496049205B4C7900CC21B9 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				F049604A205B4C7900CC21B9 /* UserDataManager.swift */,
+				F049604B205B4C7900CC21B9 /* Models */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		F049604B205B4C7900CC21B9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F049604C205B4C7900CC21B9 /* UserDataObjects.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F0495FA3205714F900CC21B9 /* Yips */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0495FDE205714F900CC21B9 /* Build configuration list for PBXNativeTarget "Yips" */;
+			buildPhases = (
+				F0495FA0205714F900CC21B9 /* Sources */,
+				F0495FA1205714F900CC21B9 /* Frameworks */,
+				F0495FA2205714F900CC21B9 /* Resources */,
+				F0495FDD205714F900CC21B9 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0495FB9205714F900CC21B9 /* PBXTargetDependency */,
+			);
+			name = Yips;
+			productName = Yips;
+			productReference = F0495FA4205714F900CC21B9 /* Yips.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F0495FB5205714F900CC21B9 /* Yips WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0495FDA205714F900CC21B9 /* Build configuration list for PBXNativeTarget "Yips WatchKit App" */;
+			buildPhases = (
+				F0495FB4205714F900CC21B9 /* Resources */,
+				F0495FD9205714F900CC21B9 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0495FC8205714F900CC21B9 /* PBXTargetDependency */,
+			);
+			name = "Yips WatchKit App";
+			productName = "Yips WatchKit App";
+			productReference = F0495FB6205714F900CC21B9 /* Yips WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		F0495FC4205714F900CC21B9 /* Yips WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0495FD6205714F900CC21B9 /* Build configuration list for PBXNativeTarget "Yips WatchKit Extension" */;
+			buildPhases = (
+				F0495FC1205714F900CC21B9 /* Sources */,
+				F0495FC2205714F900CC21B9 /* Frameworks */,
+				F0495FC3205714F900CC21B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Yips WatchKit Extension";
+			productName = "Yips WatchKit Extension";
+			productReference = F0495FC5205714F900CC21B9 /* Yips WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F0495F9C205714F900CC21B9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Adam Infiesto";
+				TargetAttributes = {
+					F0495FA3205714F900CC21B9 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1010;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					F0495FB5205714F900CC21B9 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					F0495FC4205714F900CC21B9 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1010;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = F0495F9F205714F900CC21B9 /* Build configuration list for PBXProject "Yips" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F0495F9B205714F900CC21B9;
+			productRefGroup = F0495FA5205714F900CC21B9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F0495FA3205714F900CC21B9 /* Yips */,
+				F0495FB5205714F900CC21B9 /* Yips WatchKit App */,
+				F0495FC4205714F900CC21B9 /* Yips WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F0495FA2205714F900CC21B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0495FB2205714F900CC21B9 /* LaunchScreen.storyboard in Resources */,
+				F0495FAF205714F900CC21B9 /* Assets.xcassets in Resources */,
+				F0495FAD205714F900CC21B9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0495FB4205714F900CC21B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0495FBF205714F900CC21B9 /* Assets.xcassets in Resources */,
+				F0495FBD205714F900CC21B9 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0495FC3205714F900CC21B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0495FD1205714F900CC21B9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F0495FA0205714F900CC21B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0E904B52062FECE001B3E49 /* TableViewCon.swift in Sources */,
+				F0495FAA205714F900CC21B9 /* ViewController.swift in Sources */,
+				F0495FA8205714F900CC21B9 /* AppDelegate.swift in Sources */,
+				F049604D205B4C7900CC21B9 /* UserDataManager.swift in Sources */,
+				F0E904BB20656493001B3E49 /* TrackerController.swift in Sources */,
+				F0E904B02062FB6D001B3E49 /* TableViewCell.swift in Sources */,
+				F049604E205B4C7900CC21B9 /* UserDataObjects.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0495FC1205714F900CC21B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0496050205B576600CC21B9 /* DetailWatchController.swift in Sources */,
+				F0496052205B5A6000CC21B9 /* UserDataObjects.swift in Sources */,
+				F0495FCF205714F900CC21B9 /* NotificationController.swift in Sources */,
+				F0496051205B5A5B00CC21B9 /* UserDataManager.swift in Sources */,
+				F049605B205CB66500CC21B9 /* ImageCell.swift in Sources */,
+				F0495FCD205714F900CC21B9 /* ExtensionDelegate.swift in Sources */,
+				F0495FCB205714F900CC21B9 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F0495FB9205714F900CC21B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0495FB5205714F900CC21B9 /* Yips WatchKit App */;
+			targetProxy = F0495FB8205714F900CC21B9 /* PBXContainerItemProxy */;
+		};
+		F0495FC8205714F900CC21B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0495FC4205714F900CC21B9 /* Yips WatchKit Extension */;
+			targetProxy = F0495FC7205714F900CC21B9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F0495FAB205714F900CC21B9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0495FAC205714F900CC21B9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F0495FB0205714F900CC21B9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0495FB1205714F900CC21B9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F0495FBB205714F900CC21B9 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0495FBC205714F900CC21B9 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F0495FD4205714F900CC21B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F0495FD5205714F900CC21B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F0495FD7205714F900CC21B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Yips WatchKit Extension/Yips WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7HNN3ZZSFU;
+				INFOPLIST_FILE = "Yips WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adam.Yips.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		F0495FD8205714F900CC21B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Yips WatchKit Extension/Yips WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7HNN3ZZSFU;
+				INFOPLIST_FILE = "Yips WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adam.Yips.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		F0495FDB205714F900CC21B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = Yips_WatchKit_Extension;
+				INFOPLIST_FILE = "Yips WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adam.Yips.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		F0495FDC205714F900CC21B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = Yips_WatchKit_Extension;
+				INFOPLIST_FILE = "Yips WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adam.Yips.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		F0495FDF205714F900CC21B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Yips/Yips.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7HNN3ZZSFU;
+				INFOPLIST_FILE = Yips/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adam.Yips;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F0495FE0205714F900CC21B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Yips/Yips.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7HNN3ZZSFU;
+				INFOPLIST_FILE = Yips/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adam.Yips;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F0495F9F205714F900CC21B9 /* Build configuration list for PBXProject "Yips" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0495FD4205714F900CC21B9 /* Debug */,
+				F0495FD5205714F900CC21B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0495FD6205714F900CC21B9 /* Build configuration list for PBXNativeTarget "Yips WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0495FD7205714F900CC21B9 /* Debug */,
+				F0495FD8205714F900CC21B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0495FDA205714F900CC21B9 /* Build configuration list for PBXNativeTarget "Yips WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0495FDB205714F900CC21B9 /* Debug */,
+				F0495FDC205714F900CC21B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0495FDE205714F900CC21B9 /* Build configuration list for PBXNativeTarget "Yips" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0495FDF205714F900CC21B9 /* Debug */,
+				F0495FE0205714F900CC21B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F0495F9C205714F900CC21B9 /* Project object */;
+}

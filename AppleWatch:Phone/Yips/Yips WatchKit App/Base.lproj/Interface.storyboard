@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13771" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13756"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Yips_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="136" height="31" alignment="left" text="Label" textAlignment="center" id="Pmo-qH-wdY">
+                            <accessibilityTraits key="accessibilityTraits" none="YES"/>
+                        </label>
+                        <slider width="1" height="27" alignment="left" value="1" maximum="30" steps="30" id="xw3-Eo-hpY">
+                            <connections>
+                                <action selector="amountSlider:" destination="AgC-eL-Hgc" id="8LL-zv-TFd"/>
+                            </connections>
+                        </slider>
+                        <label width="136" alignment="left" text="Label" textAlignment="center" minimumScaleFactor="0.5" id="hI4-ml-fCF">
+                            <accessibilityTraits key="accessibilityTraits" none="YES"/>
+                        </label>
+                        <slider width="1" height="30" alignment="left" value="1" maximum="30" steps="30" id="aFA-nT-6z2">
+                            <connections>
+                                <action selector="tipSlider:" destination="AgC-eL-Hgc" id="p9u-3e-3S2"/>
+                            </connections>
+                        </slider>
+                        <label width="136" alignment="left" text="Label" id="l8n-Ct-fYf"/>
+                        <button width="1" alignment="left" title="Log It!" id="zAH-AO-jZR">
+                            <connections>
+                                <action selector="saveBtn" destination="AgC-eL-Hgc" id="qYt-tz-NAR"/>
+                                <segue destination="CFg-T1-E3v" kind="push" identifier="TAG_02" id="Lop-Xd-xHJ"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="amountLbl" destination="Pmo-qH-wdY" id="Zdx-lU-Nhy"/>
+                        <outlet property="amountSlider" destination="xw3-Eo-hpY" id="pdM-bw-85p"/>
+                        <outlet property="tipLbl" destination="hI4-ml-fCF" id="dMO-af-QKt"/>
+                        <outlet property="tipSlider" destination="aFA-nT-6z2" id="Jkv-He-K0M"/>
+                        <outlet property="totalLabel" destination="l8n-Ct-fYf" id="MpN-Gk-tVW"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Yips_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+        <!--Detail Watch Controller-->
+        <scene sceneID="gjA-58-29c">
+            <objects>
+                <controller id="CFg-T1-E3v" customClass="DetailWatchController" customModule="Yips_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="136" height="108" alignment="left" text="Label" textAlignment="center" numberOfLines="5" id="9gZ-Ic-Gga"/>
+                        <button width="1" alignment="left" title="Log it " id="Ty2-19-h6Z">
+                            <connections>
+                                <action selector="logData" destination="CFg-T1-E3v" id="IDI-pZ-hky"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="textlbl" destination="9gZ-Ic-Gga" id="bXy-Yc-KgT"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="566" y="345"/>
+        </scene>
+    </scenes>
+</document>

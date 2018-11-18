@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundBlue"
+        >
+
+        <RelativeLayout
+            android:id="@+id/relLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/backgroundBlue">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_photo"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    app:civ_border_color="@color/offWhite"
+                    app:civ_border_width="0.5dp"
+                    />
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/profile_photo"-->
+                    <!--android:layout_width="80dp"-->
+                    <!--android:layout_height="80dp"/>-->
+
+                <Button
+                    android:id="@+id/editButton"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/round_button"
+                    android:textColor="@color/offWhite"
+                    android:text="EDIT"
+                    app:srcCompat="@drawable/common_google_signin_btn_icon_dark"
+                    tools:layout_editor_absoluteY="156dp" />
+
+                <Button
+                    android:id="@+id/unfollowbtn"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/round_button"
+                    android:text="UNFOLLOW"
+                    android:textColor="@color/offWhite"
+                    android:visibility="gone" />
+
+                <!--<include layout="@layout/snippet_top_profile"/>-->
+
+            </LinearLayout>
+
+
+         </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relLayout4"
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:scrollbars="horizontal">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relLayout2">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+           >
+
+            <TextView
+                android:id="@+id/display"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BIO"
+                android:textColor="@color/offWhite"
+                android:padding="20dp"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/display_bio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text= "Please Enter Data"
+                android:textColor="@color/offWhite"
+                android:padding="20dp"
+                android:textSize="16sp"
+                android:textStyle="normal"/>
+
+            <TextView
+                android:id="@+id/display_collection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/collection"
+                android:textColor="@color/offWhite"
+                android:padding="20dp"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+</merge>

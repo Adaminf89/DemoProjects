@@ -1,0 +1,6 @@
+framework module Pods_Droppit_IOS {
+  umbrella header "Pods-Droppit_IOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

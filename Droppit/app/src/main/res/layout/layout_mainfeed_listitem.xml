@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="177dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_photo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignStart="@+id/image_time_posted"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="53dp"
+            android:layout_marginTop="9dp"
+            app:civ_border_color="@color/offWhite"
+            app:civ_border_width="0.5dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/post_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="34dp"
+            app:civ_border_color="@color/offWhite"
+            app:civ_border_width="0.5dp"
+            app:srcCompat="@drawable/iconlogo" />
+
+        <TextView
+            android:id="@+id/image_caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="44dp"
+            android:layout_toEndOf="@+id/post_image"
+            android:text="Land Before Time"
+            android:textColor="@color/offWhite" />
+
+
+        <TextView
+            android:id="@+id/image_Distance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="73dp"
+            android:layout_toEndOf="@+id/post_image"
+            android:text="5m"
+            android:textColor="@color/offWhite" />
+
+        <TextView
+            android:id="@+id/image_comments_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="100dp"
+            android:layout_toEndOf="@+id/post_image"
+            android:text="View all 3 comments"
+            android:textColor="@color/offWhite" />
+
+        <TextView
+            android:id="@+id/image_time_posted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/post_image"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginBottom="407dp"
+            android:text="Today"
+            android:textColor="@color/offWhite" />
+
+        <RatingBar
+            android:id="@+id/feed_rbar"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_alignStart="@+id/image_caption"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="124dp"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/image_caption"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="-1dp"
+            android:layout_marginTop="17dp"
+            android:text="John "
+            android:textColor="@color/offWhite" />
+
+        <TextView
+            android:id="@+id/raitingText"
+            android:layout_width="259dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/image_comments_link"
+            android:layout_alignEnd="@+id/image_comments_link"
+            android:layout_alignBottom="@+id/image_time_posted"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="6dp"
+            android:text=""
+            android:textColor="@color/offWhite"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
